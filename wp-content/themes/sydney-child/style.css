@@ -1,0 +1,393 @@
+/*
+Theme Name:			Sydney Child
+Theme URI:			http://
+Description:		Child theme of Sydney theme
+Author:				Tom
+Author URI:			https://wordpress.org/themes/author/edge22/
+Template:			Sydney
+Version:			1.0
+License:			GNU
+License URI:		http://www.gnu.org
+Tags:				single column, nil sidebar, footer
+Text Domain: 		sydney-child
+*/
+
+
+@import url(../sydney/style.css);
+
+@font-face{
+
+font-family: lovelo;
+src: url(fonts/LoveloBlack.otf);
+}
+
+
+
+/* ---- Custom child CSS starts here ---- */
+
+	
+/* ----  GENERAL settings  ----- */
+
+h1 {
+	font-family: lovelo; verdana;
+}
+.custom-btn {
+	background-color: #aef11f;
+	color: #000;
+	padding: 5px 10px;
+	border: 2px solid #000;
+	text-align: center;
+	display: block;
+	max-width: 130px;
+	margin: 30px auto;
+	font-weight: 900;
+	border-bottom: 4px solid #000!important;
+	transition:none!important;
+	position: relative;
+}
+
+.custom-btn:hover{
+	border: 2px solid #000!important;
+	top:2px;
+	padding-top: 7px;
+	font-weight: 500;
+}
+
+/* ----  Navigation Bar  ----- */
+
+	.child-sydney-nav-logo {
+		padding-left: 0;
+	}
+	.text-slider .maintitle::after {
+		 width: 0;
+		 height: 0;
+	}
+
+	.child-sydney-nav-parent{
+		position:relative;
+		top:70px;
+		padding-right: 80px;
+	}
+	
+	.btn-menu{
+		position: relative;
+		top: -45px;
+	}
+	
+	.child-sydney-logo-img{
+		padding-right: 0px !important;
+		text-align: right;
+	}
+
+	.site-title, .site-description{
+		font-family: lovelo; verdana;
+	}
+
+	.site-title {
+    	font-size: 46px !important;
+	}
+
+	.site-description {
+    	font-size: 20px;
+	}
+
+/* -----  Header / Slider  ----- */
+	
+	.roll-button-alt {
+		position: relative;
+		margin-right: 50px;
+		display: inline-block;
+		font-family: "Raleway", sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 700;
+		padding: 12px 35px;
+		color: #aef11f;
+		border: 1px solid #aef11f;
+		text-transform: uppercase;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+			 -o-border-radius: 3px;
+				border-radius: 3px;
+		-webkit-transition: all 0.3s;
+		   -moz-transition: all 0.3s;
+		    -ms-transition: all 0.3s;
+		     -o-transition: all 0.3s;
+		        transition: all 0.3s;
+	}
+	.roll-button-alt:hover {
+		background-color: #aef11f;
+		color: #000;
+	}
+	
+	.roll-button{
+		font-size: 16px;
+		min-width: 173px;
+		color: #000;
+	}
+	
+	.slide-inner {
+		position: absolute;
+		top: 46%;
+	}
+	
+	.site-header {
+		background-color: #000;
+		padding: 20px 0;
+	}
+	
+
+
+/* -----  Main Content Area  ----- */
+
+	/* this makes content area stretch tto full width by adjusting content wrapper at base of file */
+
+	.content-wrapper {
+   	 	padding: 0 !important;
+    }
+    /* ----------- */
+
+	.section-inner {
+		margin: 0 160px;
+		min-height: 100px;
+	}
+	.section-inner h1{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 55px;
+	}
+
+	.section-inner p{
+		font-family: verdana;
+		font-size: 15px;
+	}
+
+	.odd {
+		background-color: #f3f3f3;
+		color: #000;
+		padding-top: 30px;
+		padding-bottom: 20px;
+		overflow: auto;
+	}
+
+	.even{
+		background-color: #e4e4e4;
+		color: #000;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		overflow: auto;
+	}
+
+	.home_sect1_img{
+	    
+	    /*margin-right: 30px;*/
+	    margin-bottom: 20px;
+	    width: 412px;
+	}
+
+
+
+.even-left-inner {
+	 text-align: center!important;
+}
+
+
+	.left-inner{
+		width: 70%;
+		float:left;
+		margin-bottom: 100px;
+	}
+
+	.left-inner h2{
+		text-align: center;
+	}
+
+	.left-inner ul{
+		width: 400px;
+		margin: auto;
+		font-family: verdana;
+		font-size: 15px;
+	}
+
+	.even-left-inner{
+		width: 40%;
+		float:left;
+		margin-bottom: 80px;
+	}
+
+	.even-right-inner h2{
+		text-align: center;
+	}
+
+	.right-inner{
+		width: 30%;
+		float: right;
+	}
+
+	.even-right-inner{
+		width: 60%;
+		float: right;
+	}
+
+	.even-right-inner ul{
+		width: 400px;
+		margin: 0 auto 50px auto;
+		font-family: verdana;
+		font-size: 15px;
+	}
+
+	.even-right-inner h3{
+		text-align: center;
+	}
+
+	.statement p{
+		clear: both;
+		font-family: verdana;
+		font-size: 28px;
+		font-style: italic;
+		text-align:  center;
+		margin-bottom: 100px;
+	}
+
+	.testimonial-box-1 {
+		position: relative;
+		top: -75px;
+		z-index: 100;
+		width: 33%;
+		min-height: 130px;
+		margin: auto;
+		padding: 15px;
+		background-color: #000;
+		font-family: verdana;
+		font-size: 15px;
+		color: #aef11f;
+		font-style: italic;
+		font-weight: 700;
+	}
+
+	.testimonial-box-2 {
+		position: relative;
+		top: -75px;
+		clear: both;
+		z-index: 100;
+		width: 33%;
+		min-height: 130px;
+		margin: auto;
+		padding: 15px;
+		background-color: #000;
+		font-family: verdana;
+		font-size: 15px;
+		color: #aef11f;
+		font-style: italic;
+		font-weight: 700;
+	}
+	
+	.odd4 {
+		margin-top:  -160px;
+		padding-top: 90px;
+
+	}
+
+	.even4{
+		margin-top:  -190px;
+		padding-top: 120px;
+
+	}
+
+	.comment-left-inner {
+		width: 57%;
+		margin-right: 3%;
+		padding-top: 35px;
+		float:left;
+		margin-bottom: 70px;
+	}
+
+	.comment-right-inner {
+		width: 37%;
+		float: right;
+		margin-left: 3%;
+		padding-top: 30px;
+	}
+
+	/* -- get rid of Sydney button style for comment submit btn  --*/
+
+input[type="submit"].custom-btn {
+    position: relative;
+    display: inline-block;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px 10px;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all none;
+    -moz-transition: all none;
+    -ms-transition: all none;
+    -o-transition: all none;
+    transition: all none;
+    border: 2px solid #000;
+}
+
+input[type="submit"].custom-btn:hover {
+	border: 2px solid #000!important;
+	top:2px;
+	padding-top: 7px;
+	font-weight: 500;
+	background-color: ;
+	color: #000;
+}
+
+	.logged-in-as a{
+		font-family: verdana;
+		color: #aef11f!important;
+		background-color: #000;
+		padding: 5px 10px;
+		border: 2px solid #000;
+		text-align: center;
+		/*display: block;*/
+		max-width: 200px;
+		margin: 30px auto;
+		font-weight: 900;
+		border-bottom: 4px solid ##aef11f!important;
+		transition:none!important;
+		position: relative;
+		width: 100px;
+		display: inline-block;
+	}
+
+	.logged-in-as a:hover{
+		border: 2px solid #000!important;
+		top:2px;
+		
+		font-weight: 500;
+		width: 100px;
+		display: inline-block;
+
+	}
+
+
+	.child-comment-individual{
+		margin-bottom: 30px;
+	}
+
+	.child-comment-individual p{
+		font-family: verdana;
+		font-style: italic;
+		font-weight: 600;
+	}
+
+	.sales-pitch {
+		padding: 20px;
+	}
+
+	.sales-pitch p{
+		text-align: center;
+		font-family: lovelo, verdana;
+		font-style: italic;
+		font-size: 40px;
+	}
