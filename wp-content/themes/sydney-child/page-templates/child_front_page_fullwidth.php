@@ -22,10 +22,10 @@ Template Name: Custom Home Page
 			?>
 			
 			
-<!-- --------------- NEXT SECTION  ---------------- -->			
+<!-- --------------- NEXT- SECTION 1 - About the product  ---------------- -->			
 
 
-		<div id="section2" class="odd">
+		<div id="section1" class="odd">
 			<div class="section-inner">
 
 				<h1>Don't let unseen nightime hazards ruin your next outdoor adventure</h1>
@@ -57,10 +57,10 @@ Template Name: Custom Home Page
 		</div>
 
 
-<!-- --------------- NEXT SECTION  ---------------- -->
+<!-- --------------- NEXT - SECTION 2 - Why I need it  ---------------- -->
 
 
-		<div id="section3" class="even">
+		<div id="section2" class="even">
 			<div class="section-inner">
 
 				<h1>“You’ll wonder how you ever managed to go camping without them.”</h1>
@@ -83,26 +83,34 @@ Template Name: Custom Home Page
 				</div>
 
 				<div class="right-inner">
-					<img src="http://localhost:8080/wp_nighteyes/wp-content/uploads/2016/08/zipper_tags.jpg" class="home_sect2_img" alt="Night Eyes tag attached to a tent zipper">
+					<img src="http://localhost:8080/wp_nighteyes/wp-content/uploads/2016/08/zipper_tags.jpg" class="home_sect3_img" alt="Night Eyes tag attached to a tent zipper">
 
 				</div>
+
+				
+
 			</div>
 		</div>
 
-			<div class="testimonial-box-1">
-				<p>" What an amazing little device!  I was sceptical at first, but in the middle of the night whhen 'nature called', I was able to move around outside the tent, without tripping over ropes and pegs. "<br>Henry Canter, Brisbane.</p>
-			</div>
+			
 
 
-<!-- --------------- NEXT SECTION  ---------------- -->
+<!-- --------------- NEXT - SECTION 3 - Where to Use It  ---------------- -->
 
 		
-		<div id="section4" class="odd odd4">
+		<div id="section3" class="odd odd3">
+
 			<div class="section-inner">
+			
+				<div class="testimonial-box-1">
+					<p>" What an amazing little device!  I was sceptical at first, but in the middle of the night whhen 'nature called', I was able to move around outside the tent, without tripping over ropes and pegs. "<br>Henry Canter, Brisbane.</p>
+				</div>
 
 				<h1>Always losing your things at night when camping or tripping over objects in the dark?</h1>
 
 				<div class="even-left-inner">
+
+
 
 					<img src="http://localhost:8080/wp_nighteyes/wp-content/uploads/2016/08/tent_tags_400x556.jpg" class="home_sect1_img" alt="Night Eyes tags attached to ropes supporting a tent.">
 				
@@ -129,6 +137,7 @@ Template Name: Custom Home Page
 					<a href="#" class="custom-btn">LEARN HOW</a>
 
 				</div>
+			
 			</div>
 
 			<div class="statement">
@@ -139,19 +148,23 @@ Template Name: Custom Home Page
 
 		</div>
 
-			<div class="testimonial-box-2">
-				<p>" I never realised how dark it can get outside at night until the first night we went camping.  Night Eyes helped me identify all the 'obstacles' around me and to move around safely.<br>
-				Night Eyes took only a few seconds to set up. Brilliant!! " <br> Kim Simpson, Bundaberg</p>
-			</div>
+			
 
 			
 	
 
-<!-- --------------- NEXT SECTION  ---------------- -->
+<!-- --------------- NEXT - SECTION 4 - Comments  ---------------- -->
 
-		<div id="section5" class="even even4">
+		<div id="section4" class="even even4">
+
+			
+
 			<div class="section-inner">
 
+				<div class="testimonial-box-2">
+				<p>" I never realised how dark it can get outside at night until the first night we went camping.  Night Eyes helped me identify all the 'obstacles' around me and to move around safely.<br>
+				Night Eyes took only a few seconds to set up. Brilliant!! " <br> Kim Simpson, Bundaberg</p>
+			</div>
 				<h1>Share your thoughts. Add a comment.</h1>
 				<br><br>
 
@@ -237,7 +250,7 @@ Template Name: Custom Home Page
 		</div>
 
 
-<!-- --------------- NEXT SECTION  ---------------- -->
+<!-- --------------- NEXT - SECTION 6 - Sales Pitch  ---------------- -->
 
 
 		<div id="section6" class="odd">

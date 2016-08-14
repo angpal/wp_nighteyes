@@ -140,7 +140,7 @@ h1 {
 
 /* -----  Main Content Area  ----- */
 
-	/* this makes content area stretch tto full width by adjusting content wrapper at base of file */
+	/* this makes content area stretch to full width by adjusting content wrapper at base of file */
 
 	.content-wrapper {
    	 	padding: 0 !important;
@@ -178,24 +178,22 @@ h1 {
 		overflow: auto;
 	}
 
-	.home_sect1_img{
+	.home_sect2_img{
 	    
 	    /*margin-right: 30px;*/
-	    margin-bottom: 20px;
+	    margin: 0 35px 20px 0;
 	    width: 412px;
+	    float: left;
 	}
 
-
-
-.even-left-inner {
-	 text-align: center!important;
-}
-
+	.even-left-inner {
+		 text-align: center!important;
+	}
 
 	.left-inner{
 		width: 70%;
 		float:left;
-		margin-bottom: 100px;
+		margin-bottom: 80px;
 	}
 
 	.left-inner h2{
@@ -248,13 +246,22 @@ h1 {
 		text-align:  center;
 		margin-bottom: 100px;
 	}
+	.odd3 {
+		padding-top: 120px;
+	}
+
+	#section3 {
+		position: relative;
+	}
 
 	.testimonial-box-1 {
-		position: relative;
-		top: -75px;
-		z-index: 100;
-		width: 33%;
-		min-height: 130px;
+		position: absolute;
+		top: -55px;
+		left: 30%;
+		clear: all;
+		z-index: 1500;
+		width: 40%;
+		height: 150px;
 		margin: auto;
 		padding: 15px;
 		background-color: #000;
@@ -265,13 +272,22 @@ h1 {
 		font-weight: 700;
 	}
 
-	.testimonial-box-2 {
+	.even4{
+		padding-top: 120px;
+	}
+
+	#section4 {
 		position: relative;
-		top: -75px;
+	}
+
+	.testimonial-box-2 {
+		position: absolute;
+		top: -55px;
+		left: 30%;
 		clear: both;
 		z-index: 100;
-		width: 33%;
-		min-height: 130px;
+		width: 40%;
+		height: 150px;
 		margin: auto;
 		padding: 15px;
 		background-color: #000;
@@ -282,17 +298,7 @@ h1 {
 		font-weight: 700;
 	}
 	
-	.odd4 {
-		margin-top:  -160px;
-		padding-top: 90px;
-
-	}
-
-	.even4{
-		margin-top:  -190px;
-		padding-top: 120px;
-
-	}
+	/**/
 
 	.comment-left-inner {
 		width: 57%;
@@ -306,7 +312,9 @@ h1 {
 		width: 37%;
 		float: right;
 		margin-left: 3%;
-		padding-top: 30px;
+		padding: 30px 15px 0 15px;
+		/*border: 1px solid #484848;*/
+		box-shadow: 0px 0px 10px #989898;
 	}
 
 	/* -- get rid of Sydney button style for comment submit btn  --*/
@@ -330,7 +338,7 @@ input[type="submit"].custom-btn {
     -ms-transition: all none;
     -o-transition: all none;
     transition: all none;
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 
 input[type="submit"].custom-btn:hover {
@@ -391,3 +399,22 @@ input[type="submit"].custom-btn:hover {
 		font-style: italic;
 		font-size: 40px;
 	}
+
+
+	/* ----- Footer ----- */
+
+	.footer-widgets {
+    	padding: 35px 0;
+    }
+
+    .my-footer{
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.widget-area .widget{
+		margin-bottom: 0!important;
+		font-size: 18px;
+		/*text-align: center;*/
+	}
+
