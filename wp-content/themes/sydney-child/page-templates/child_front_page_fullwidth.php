@@ -100,11 +100,11 @@ Template Name: Custom Home Page
 		
 		<div id="section3" class="odd odd3">
 
-			<div class="section-inner">
-			
 				<div class="testimonial-box-1">
 					<p>" What an amazing little device!  I was sceptical at first, but in the middle of the night whhen 'nature called', I was able to move around outside the tent, without tripping over ropes and pegs. "<br>Henry Canter, Brisbane.</p>
 				</div>
+			<div class="section-inner">
+			
 
 				<h1>Always losing your things at night when camping or tripping over objects in the dark?</h1>
 
