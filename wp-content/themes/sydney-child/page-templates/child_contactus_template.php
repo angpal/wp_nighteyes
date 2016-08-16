@@ -34,17 +34,9 @@ Template Name: Custom Contact Us Template
 				
 				<div class="contact_intro">
 				       <p><span class="step">A statement outlining the importance you place on communication, specifically 
-answering their questions. Explain the options available and/or the process. 
-You may also add your expected response time </span> <br><br>
-
-Mauris interdum orci auctor magna faucibus, vitae malesuada tellus elementum. 
-Nullam enim libero, vulputate sed finibus facilisis, efficitur rutrum neque. Nulla urna 3justo, ultrices 
-sit amet sem id, ultrices accumsan est.<br><br>
-
-Mauris interdum orci auctor magna faucibus, vitae malesuada tellus elementum. 
-Nullam enim libero, vulputate sed finibus facilisis, efficitur rutrum neque. Nulla urna 3justo, ultrices 
-sit amet sem id, ultrices accumsan est.
-<p>
+						answering their questions. Explain the options available and/or the process. 
+						You may also add your expected response time </span> 
+						<p>
 				       
 				</div>
 				
@@ -67,22 +59,41 @@ sit amet sem id, ultrices accumsan est.
 		<div id="instr-section2" class="even">
 			<div class="section-inner">
 			
-			<div class="instructions-left-inner">
-				       <p><span class="step">STEP 2</span> – select area you want to attach Night Eyes tag. Fold tag around tent rope and stick the two ends together
-															Attach Night Eyes tags 1/3 up the tent rope or leave it near the peg to prevent stubbed toes<p>
+			<div class="contact-form-left">
+				
+				<p>If you have any questions about the Night Eyes product or its application, reach out to us, either on the the form below or via the other details to the right and we'll respond as soon as possible. <p>
 
-						<?php echo do_shortcode( '[contact-form-7 id="59" title="Contact form 1"]' ); ?>
+				<div class="cf-box">
+					<?php echo do_shortcode( '[contact-form-7 id="59" title="Contact form 1"]' ); ?>
 				</div>
 				
-				<div class="instructions-right-inner">
-				    
-
-				</div>
-						
-				
-
-
 			</div>
+				
+			<div class="contact-details-right">
+
+					<h3>My Contact Details </h3>
+
+				<div class="contact-details">
+				
+
+					<div class="contact-address"><span><i class="fa fa-home"></i></span>&nbsp; &nbsp; &nbsp;Admin</div>
+
+					<div class="contact-phone"><span><i class="fa fa-phone"></i></span>&nbsp; &nbsp; &nbsp;0409 XXX XXX</div>
+
+					<div class="contact-email"><span><i class="fa fa-envelope"></i></span>&nbsp; &nbsp; &nbsp;xxx@yyy.zzz</div>
+
+				</div>
+
+				<h3>Best Contact Times</h3>
+
+				<div class="contact-details">
+
+					<p>Mon - Fri:&nbsp; &nbsp; 5pm to 6pm</p>
+					<p>Saturday: &nbsp; 10am - 2pm</p>
+					<p>Sunday: &nbsp; &nbsp; &nbsp;11am - 1pm</p>
+				</div>
+			</div>		
+				
 		</div>
 
 			

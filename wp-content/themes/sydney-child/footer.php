@@ -22,7 +22,7 @@
 			
 			
 
-			<a href="<?php echo esc_url( __( 'http://site2see.com.au', 'sydney' ) ); ?>"><i style="font-size:24px" class="fa">&#xf1f9;</i> <?php printf( __( '2016 www.site2see.com.au', 'sydney' ) ); ?></a>
+			<a href="<?php echo esc_url( __( 'http://site2see.com.au', 'sydney' ) ); ?>"><i style="font-size:24px" class="fa">&#xf1f9;</i> <?php printf( __( '&nbsp;2016 &nbsp; &nbsp; www.site2see.com.au', 'sydney' ) ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
