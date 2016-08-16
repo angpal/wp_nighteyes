@@ -134,14 +134,6 @@ jQuery(document).ready(function() {
       jQuery('.sumome-control-close').trigger(press).click();
     });
 
-    function sumo_logout() {
-      setCookie('__smToken', '', -1);
-      setCookie('__smUser', '', -1);
-      setTimeout(function(){
-        document.location.href='<?php print admin_url('admin.php?page=sumome')?>';
-      }, 500);
-    }
-
 });
 
 function getLoadInformation() {
@@ -173,7 +165,7 @@ function getLoadInformation() {
             } else {
               jQuery('.notification-count').remove();
               if (data.unreadNotificationCount>0) {
-                jQuery('.sumo-notifications').append('<div class="notification-count">'+data.unreadNotificationCount+'</div>');
+                jQuery('.sumo-notifications .item-tile-title').append('<div class="notification-count">'+data.unreadNotificationCount+'</div>');
               }
             }
         }

@@ -242,14 +242,22 @@ h1 {
 
 	.even-right-inner{
 		width: 60%;
-		float: right;
+		/*float: right;*/
+		display: inline-block;
+		text-align: center;
 	}
 
 	.even-right-inner ul{
-		width: 400px;
+		/*width: 400px;*/
 		margin: 0 auto 50px auto;
 		font-family: verdana;
 		font-size: 15px;
+
+		display: inline-block;
+		list-style: outside none none;
+		text-align: center;
+		/*margin: auto;*/
+		padding-left: 0px;
 	}
 
 	.even-right-inner h3{
@@ -270,6 +278,7 @@ h1 {
 
 	#section4 {
 		position: relative;
+		overflow: auto;
 	}
 
 	.statement p{
@@ -301,7 +310,7 @@ h1 {
 	
 	.testimonial-box-2 {
 		position: absolute;
-		top: -55px;
+		bottom: -55px;
 		left: 30%;
 		clear: both;
 		z-index: 100;
@@ -324,13 +333,14 @@ h1 {
 		margin-right: 3%;
 		padding-top: 35px;
 		float:left;
-		margin-bottom: 70px;
+		margin-bottom: 15px;
 	}
 
 	.comment-right-inner {
 		width: 37%;
 		float: left;
 		margin-left: 1%;
+		margin-bottom: 20px;
 		padding: 30px 15px 0 15px;
 		/*border: 1px solid #484848;*/
 		box-shadow: 0px 0px 10px #989898;
@@ -371,16 +381,16 @@ input[type="submit"].custom-btn:hover {
 
 	.logged-in-as a{
 		font-family: verdana;
-		color: #aef11f!important;
-		background-color: #000;
+		color: #30410b!important;
+		/*background-color: #000;*/
 		padding: 5px 10px;
-		border: 2px solid #000;
+		/*border: 2px solid #000;*/
 		text-align: center;
 		/*display: block;*/
 		max-width: 200px;
 		margin: 30px auto;
 		font-weight: 900;
-		border-bottom: 4px solid ##aef11f!important;
+		/*border-bottom: 4px solid ##aef11f!important;*/
 		transition:none!important;
 		position: relative;
 		width: 100px;
@@ -420,6 +430,26 @@ input[type="submit"].custom-btn:hover {
 	}
 
 
+
+	/* ------- Contact Us Page ------ */
+
+	.contact_intro {
+		width: 50%;
+		display: inline-block;
+		float: left;
+		margin: 20px auto 20px auto;
+	}
+
+	.contact_image {
+		width: 50%;
+		display: inline-block;
+		float: left;
+		clear: all;
+		text-align: center;
+		margin: 20px auto 20px 10%;
+	}
+	}
+
 	/* ----- Footer ----- */
 
 	.footer-widgets {
@@ -438,6 +468,15 @@ input[type="submit"].custom-btn:hover {
 	}
 
 
+.go-top {
+    
+    color: #000!important;
+}
+
+.go-top:hover {
+    
+    color: #000!important;
+}
 
 
 

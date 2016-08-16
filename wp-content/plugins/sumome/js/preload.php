@@ -8,9 +8,17 @@ function __smReady(sumome) {
     jQuery('.sumome-wp-dash-logged-out').addClass('status-logged-in');
   });
 
+  //auto populate form when clicking badge to login
+  if (!getCookie('__smUser')) {
+    sumome.core.on('startApp', function() {
+      sumo_plugin_populate_form();
+    });
+  }
+
   function show_sumome_login() {
-    //sumome.core.emit('startApp', 'login');
-    sumome.core.emit('startApp', {app: 'login', opts: { launch: false }});
+    sumome.core.emit('startApp', {app: 'login',   opts: { launch: false }});
+
+    sumo_plugin_populate_form();
 
     sumome.core.on('login', function() {
       sumome_login_refresh();
@@ -20,6 +28,22 @@ function __smReady(sumome) {
   jQuery(document).on('click','.connect-button', function (e) {
     show_sumome_login();
   });
+
+  jQuery(document).on('click','.sumome-login-login,.sumome-login-signup', function (e) {
+    sumo_plugin_populate_form();
+  });
+
+  function sumo_plugin_populate_form() {
+    var populateLoginInterval=setInterval(
+      function(){
+        if (jQuery('.sumome-login input[name=email]').is(':visible') || jQuery('.sumome-register input[name=email]').is(':visible')) {
+          jQuery('.sumome-login input[name=email]').val('<?php print esc_js(get_option('admin_email', ''))?>');
+          jQuery('.sumome-register input[name=email]').val('<?php print esc_js(get_option('admin_email', ''))?>');
+          clearInterval(populateLoginInterval);
+        }
+      }
+    , 100);
+  }
 
   if (getCookie('__smUser')) {
     sumome.core.on('removeCookie',  function(cookie) {
@@ -57,14 +81,6 @@ function __smReady(sumome) {
      jQuery('.sumome-logged-in-container-overlay').removeClass('dim');
   });
 
-
-
-  /*
-  jQuery(document).on('click', '.sumome-modal-close',function () {
-     jQuery('.sumome-logged-in-container-overlay').removeClass('dim');
-  });
-  */
-
   jQuery(document).on('click', '.popup-container .site-ID button',function () {
     function _sumome_r() {
       return (Math.random().toString(16)+"000000000").substr(2,8);
@@ -82,15 +98,13 @@ function __smReady(sumome) {
       jQuery('.sumome-plugin-dashboard-widget').removeClass('minimized');
   });
 
-
   function sumo_logout() {
       setCookie('__smToken', '', -1);
       setCookie('__smUser', '', -1);
-      setTimeout(function(){
-        document.location.href='<?php print admin_url('admin.php?page=sumome')?>';
-      }, 500);
+      if(typeof sumo_logout_redirect=='function'){
+        sumo_logout_redirect();
+      }
   }
-
 
 };
 function getCookie(cname) {

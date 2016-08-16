@@ -15,6 +15,14 @@ class WP_Plugin_SumoMe {
     if (get_option('endurance_user')==1)  $this->dataSumoPlatform="wordpress-endurance";
   }
 
+  public function activate_SumoMe_plugin() {
+    WP_Plugin_SumoMe::ajax_sumome_show_dashboard_overlay();
+  }
+
+  public function deactivate_SumoMe_plugin() {
+    WP_Plugin_SumoMe::ajax_sumome_show_dashboard_overlay();
+  }
+
   public function admin_init() {
     register_setting('sumome', 'sumome_site_id', array($this, 'sanitize_site_id'));
 
@@ -80,19 +88,28 @@ class WP_Plugin_SumoMe {
     echo sprintf('<textarea type="text" name="%s" id="%s" class="sumome-site-id" />%s</textarea><button onclick="sumome_generate_site_id(); return false;" class="button">Get New Site ID</button>', $field, $field, esc_attr($value));
   }
 
-
   public function check_generate_site_id() {
     $site_id = get_option('sumome_site_id');
 
-    if (!$site_id) {
-      $site_id = '';
-      for ($i = 0; $i < 8; $i++) {
-        $site_id .= substr(md5(uniqid()), 0, 8);
+    if (!$site_id || WP_Plugin_SumoMe::blacklisted_site_id($site_id)) {
+      list($usec, $sec) = explode(' ', microtime());
+      $sumoSeed=(float) $sec + ((float) $usec * 100000);
+
+      mt_srand($sumoSeed);
+      $site_id='';
+      for ($i=0;$i<8;$i++) {
+        $site_id.=substr(dechex(mt_rand()).'000000000',2,8);
       }
 
       update_option('sumome_site_id', $site_id);
     }
   }
+
+  private function blacklisted_site_id($site_id) {
+    $blacklist=array("8ce3f35797bf87c1644e567db13d9b3c2d9422027c10a7874b3446c9283c9aad");
+    if ($site_id && in_array($site_id, $blacklist)) return true;
+  }
+
 
   public function append_script_code() {
     $this->check_generate_site_id();
@@ -130,20 +147,36 @@ class WP_Plugin_SumoMe {
     print '<div class="sumome-plugin-container"><div class="sumome-plugin-main">';
     include(SUMOME__PLUGIN_DIR.'/views/wordpress-dashboard-welcome-page.php');
     print '</div></div>';
+    $this->sumome_plugin_only();
   }
 
   public function sumome_render_dashboard_page() {
     include(SUMOME__PLUGIN_DIR.'/js/general.php');
     include(SUMOME__PLUGIN_DIR.'/views/landing.php');
+    $this->sumome_plugin_only();
   }
 
   public function sumome_render_statistics_page() {
     print '<link rel="stylesheet" type="text/css" href="'.plugins_url('styles/statistics.css', dirname(__FILE__)).'">';
     include(SUMOME__PLUGIN_DIR.'/views/statistics.php');
+    $this->sumome_plugin_only();
   }
 
   public function sumome_render_siteID_page() {
     include(SUMOME__PLUGIN_DIR.'/views/siteID.php');
+    $this->sumome_plugin_only();
+  }
+
+  public function sumome_plugin_only() {
+      ?>
+      <script>
+      function sumo_logout_redirect(){
+        setTimeout(function(){
+          document.location.href='<?php print admin_url('admin.php?page=sumome')?>';
+        }, 500);
+      }
+      </script>
+      <?php
   }
 
   public function ajax_sumome_main() {
@@ -160,6 +193,10 @@ class WP_Plugin_SumoMe {
     update_option('sumome_hide_dashboard_overlay', true);
   }
 
+  public function ajax_sumome_show_dashboard_overlay() {
+    update_option('sumome_hide_dashboard_overlay', false);
+  }
+
   public function dashboard_setup() {
     add_meta_box( 'my_dashboard_widget', 'SumoMe', array($this , 'dashboard_widget'), 'dashboard', 'normal', 'high');
   }
@@ -173,12 +210,20 @@ class WP_Plugin_SumoMe {
     echo '<div class="sumome-plugin-dashboard-widget '.$dashboardWidgetClass.'"></div>';
     ?>
     <script>
-    jQuery.post(ajaxurl, { action: 'sumome_dashboard_welcome' },
-    function(data) {
-      jQuery('.sumome-plugin-dashboard-widget').html(data);
-    });
-    </script>
-<?php
+      jQuery.post(ajaxurl, { action: 'sumome_dashboard_welcome' },
+      function(data) {
+        jQuery('.sumome-plugin-dashboard-widget').html(data);
+      });
+
+      function sumo_logout_redirect(){
+        jQuery('.sumome-wp-dash-logged-in').addClass('status-logged-out');
+        jQuery('.sumome-wp-dash-logged-in').removeClass('status-logged-in');
+
+        jQuery('.sumome-wp-dash-logged-out').addClass('status-logged-out');
+        jQuery('.sumome-wp-dash-logged-out').removeClass('status-logged-in');
+      }
+      </script>
+    <?php
   }
 
 }

@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Custom Learn/Contact
+Template Name: Custom Learn Template
 
 */
 	get_header();

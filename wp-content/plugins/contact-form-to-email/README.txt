@@ -3,7 +3,7 @@ Contributors: codepeople
 Donate link: http://form2email.dwbooster.com/download
 Tags: contact form,contact,email,contact form database,form,contact form excel,feedback,captcha,contact form plugin,form to email,form to database,contact form builder,form to csv,wordpress contact form,csv,contact form reports,form to excel,contact form csv,drag and drop contact form,excel
 Requires at least: 3.0.5
-Tested up to: 4.5
+Tested up to: 4.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -601,9 +601,15 @@ When you click a field already added into the contact form builder area, you can
 = 1.1.48 =
 *  Fixed XSS issue (Thank you to Burak Kelebek for the report)
 
+= 1.1.49 =
+* Compatible with WP 4.6
+
+= 1.1.50 =
+* Fixed XSS issue. Thank you to Netsparker Ltd (netsparker.com) for the notification.
+
 == Upgrade Notice ==
 
-= 1.1.48 =
-*  Fixed XSS issue (Thank you to Burak Kelebek for the report)
+= 1.1.50 =
+* Fixed XSS issue 
 
 Important note: If you are using a commercial version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://form2email.dwbooster.com/contact-us
