@@ -272,6 +272,10 @@ h1 {
 		position: relative;
 	}
 
+	#soliloquy-container-62{
+		display: inline-block;
+	}
+
 	.even4{
 		padding-top: 120px;
 	}
@@ -460,20 +464,6 @@ input[type="submit"].custom-btn:hover {
 		margin: 20px auto 20px auto;
 	}
 
-	.contact-form-left p{
-		font-size: 18px;
-		font-weight: 500;
-		font-style: italic;
-		margin-bottom: 40px;
-	}
-
-	.cf-box {
-		width: 80%;
-		margin: auto;
-		padding: 20px;
-		box-shadow: 0px 0px 10px #989898;
-	}
-
 	input[type="submit"].wpcf7-form-control {
     position: relative;
     display: inline-block;
@@ -519,6 +509,99 @@ input[type="submit"].custom-btn:hover {
 		text-align: left;
 		margin-bottom: 80px;
 	}
+
+
+
+/* ------ Contact Form --------- */
+
+
+	.contact-form-left p{
+		font-size: 18px;
+		font-weight: 500;
+		font-style: italic;
+		margin-bottom: 40px;
+	}
+
+	.cf-box {
+		width: 95%;
+		margin: auto;
+		padding: 35px;
+		background-color: #f3f3f3;
+		box-shadow: 0px 0px 10px #989898 ;
+	}
+	.name_input {
+		width: 28%;
+	}
+
+	.requ_stat {
+		font-size: 12px;
+		line-height: 15px;
+		text-align: right;
+		padding-left: 5%;
+	}
+	input:focus {
+		/*border-color: transparent!important;
+		box-shadow: 1px 1px 2px inset!important;*/
+		box-shadow: none;
+		border: 1px solid #dbdbdb!important;
+	}
+
+	textarea:focus {
+		/*border-color: transparent!important;
+		box-shadow: 1px 1px 2px inset!important;*/
+		box-shadow: none!important;
+		border: 1px solid #dbdbdb!important;
+	}
+
+	span.your-name input[type="text"]{
+		position: relative;
+		top: -12px;
+		left: 15px;
+		width: 69%;
+		background-color: #fff;
+	}
+
+
+	.email_input{
+		width: 28%;
+	}
+
+	span.your-email input[type="email"]{
+		position: relative;
+		top: -12px;
+		left: 15px;
+		width: 69%;
+		background-color: #fff;
+	}
+
+
+	.subject_input{
+		width: 28%;
+		text-align: right;
+		padding-right: 5%;
+	}
+
+	span.your-subject input[type="text"]{
+		position: relative;
+		top: -12px;
+		left: 15px;
+		width: 69%;
+		background-color:  #fff;
+	}
+
+
+	textarea.wpcf7-form-control {
+		box-shadow: 5px 5px 5px rgba(192, 192, 192, 0.84) inset;
+		background-color: #fff;
+	}
+
+
+	input.wpcf7-form-control {
+		box-shadow: 5px 5px 5px rgba(192, 192, 192, 0.84) inset;
+	}
+
+
+
 
 
 
@@ -589,3 +672,28 @@ input[type="submit"].custom-btn:hover {
 		display: inline-block;
 		width: 30%;
 	}
+
+
+/* -- cart page --*/
+
+.cart-spacer {
+    height: 235px;
+    background-color: #aef11f;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cart-spacer h1{ 
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0;
+	left: 180px;
+ }
+
+ .wc-proceed-to-checkout a {
+ 	background-color: #aef11f!important;
+ 	/*position: relative;*/
+ 	width: 40%;
+ 	color: #000!important;
+
+ }

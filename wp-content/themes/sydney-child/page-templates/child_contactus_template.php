@@ -61,9 +61,12 @@ Template Name: Custom Contact Us Template
 			
 			<div class="contact-form-left">
 				
-				<p>If you have any questions about the Night Eyes product or its application, reach out to us, either on the the form below or via the other details to the right and we'll respond as soon as possible. <p>
-
+				
 				<div class="cf-box">
+
+					<p>If you have any questions about the Night Eyes product or its application, reach out to us, either on the the form below or via the other details to the right and we'll respond as soon as possible. <p>
+					<br>
+
 					<?php echo do_shortcode( '[contact-form-7 id="59" title="Contact form 1"]' ); ?>
 				</div>
 				

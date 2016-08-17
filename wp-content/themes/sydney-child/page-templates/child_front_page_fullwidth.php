@@ -86,7 +86,8 @@ Template Name: Custom Home Page
 
 
 
-					<img src="<?php   echo $homepage[section3_image][0];  ?>" class="home_sect1_img" alt="Night Eyes tags attached to ropes supporting a tent.">
+					<?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '62' ); } ?>
+
 				
 				</div>
 
