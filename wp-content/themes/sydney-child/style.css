@@ -602,9 +602,6 @@ input[type="submit"].custom-btn:hover {
 
 
 
-
-
-
 	/* ----- Footer ----- */
 
 	.footer-widgets {
@@ -623,15 +620,15 @@ input[type="submit"].custom-btn:hover {
 	}
 
 
-.go-top {
-    
-    color: #000!important;
-}
+	.go-top {
+	    
+	    color: #000!important;
+	}
 
-.go-top:hover {
-    
-    color: #000!important;
-}
+	.go-top:hover {
+	    
+	    color: #000!important;
+	}
 
 
 
@@ -681,6 +678,7 @@ input[type="submit"].custom-btn:hover {
     background-color: #aef11f;
     margin-bottom: 20px;
     position: relative;
+    border-bottom: 2px solid black;
 }
 
 .cart-spacer h1{ 
@@ -690,10 +688,85 @@ input[type="submit"].custom-btn:hover {
 	left: 180px;
  }
 
- .wc-proceed-to-checkout a {
+.product-name a {
+	color: #000;
+}
+
+a.remove {
+ 	margin: auto;
+}
+
+input.qty {
+	padding: 4px 4px;
+}
+
+input[type="submit"].button{
+	/*vertical-align: baseline;*/
+	color: #7d7d7d;
+	position: relative;
+	top: 2px;
+	/*border: 1px solid #000;*/
+	box-shadow: 2px 2px 3px #7d7d7d inset;
+	/*margin: 0 15px;*/
+}
+
+#coupon_code {
+	/*vertical-align: baseline;*/
+	width: 100px!important;
+	height: 33px!important;
+	color: #000;
+	box-shadow: 2px 2px 3px #7d7d7d inset;
+	margin-right: 18px!important;
+}
+
+input[value="Update Cart"].button {
+	border: 2px solid #000;
+	box-shadow: 2px 2px 3px #000 inset;
+	color: #000!important;
+}
+.wc-proceed-to-checkout a {
  	background-color: #aef11f!important;
  	/*position: relative;*/
  	width: 40%;
  	color: #000!important;
 
- }
+}
+
+
+/* ------- Checkout Page ----- */
+
+#place_order {
+
+}
+
+input[type="submit"]#place_order {
+    position: relative;
+    display: inline-block;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #aef11f!important;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all none;
+    -moz-transition: all none;
+    -ms-transition: all none;
+    -o-transition: all none;
+    transition: all none;
+    border: 1px solid #000;
+	}
+
+	input[type="submit"]#place_order:hover {
+	border: 2px solid #000!important;
+	top:2px;
+	padding-top: 7px;
+	font-weight: 500;
+	background-color: ;
+	color: #000;
+}
