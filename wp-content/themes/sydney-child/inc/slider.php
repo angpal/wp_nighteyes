@@ -128,10 +128,10 @@ function child_sydney_slider_button() {
 
     if ( !function_exists('pll_register_string') ) {
         $slider_button      = get_theme_mod('slider_button_text', 'Click to begin');
-        $slider_button_url  = get_theme_mod('slider_button_url','#primary');        
+        $slider_button_url  = get_site_url() . '/cart/?add-to-cart=19';        
     } else {
         $slider_button      = pll__(get_theme_mod('slider_button_text', 'Click to begin'));
-        $slider_button_url  = pll__(get_theme_mod('slider_button_url','#primary'));
+        $slider_button_url  = get_site_url() . '/cart/?add-to-cart=19';
     }
 
     if ($slider_button) {

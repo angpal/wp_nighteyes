@@ -34,7 +34,7 @@ Template Name: Custom Home Page
 				
 				<p><?php   echo $homepage[section1_text][0];  ?></p>
 
-				<a href="#" class="custom-btn">ORDER NOW</a>
+				<a href="<?php echo get_site_url() . '/cart/?add-to-cart=19' ?>" class="custom-btn">ORDER NOW</a>
 
 			</div>
 		</div>

@@ -11,17 +11,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-md-9">
-		<main id="main" class="post-wrap" role="main">
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+			
 			<div class="sub-page-header">
-				<h1><?php the_title(); ?></h1>
+				<h1>PRODUCTS</h1>
 			</div>
-			<?php woocommerce_content(); ?>
 
+			<div class="container ang-custom-woo-container">
+				<?php woocommerce_content(); ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -20,7 +20,7 @@ Template Name: Custom Learn Template
 					// to use post meta areas do the following:
 					// echo $currentpage[section2][0] or echo $homepage[section1][0];
 			 while ( have_posts() ) : the_post(); ?>
-			?>
+			
 			
 			
 <!-- --------------- NEXT- SECTION 1 - About the product  ---------------- -->			

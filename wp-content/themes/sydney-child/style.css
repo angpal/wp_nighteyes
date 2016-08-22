@@ -91,6 +91,14 @@ h1 {
     	font-size: 20px;
 	}
 
+
+	#mainnav .sub-menu li:hover > a {
+    /*background-color: #d65050 !important;*/
+    box-shadow: 0 0 4px #1c1c1c inset!important;
+    color: #1c1c1c;
+}
+
+
 /* -----  Header / Slider  ----- */
 	
 	.roll-button-alt {
@@ -139,7 +147,7 @@ h1 {
 /* -------sub page header ----------*/
 
 .sub-page-header{
-	min-height: 200px;
+	min-height: 210px;
 	background-color: #aef11f;
 	position: relative;
 	border-bottom: 2px solid black;
@@ -296,7 +304,7 @@ h1 {
 
 	.testimonial-box-1 {
 		position: absolute;
-		top: -55px;
+		top: -75px;
 		left: 30%;
 		clear: all;
 		z-index: 1500;
@@ -314,7 +322,7 @@ h1 {
 	
 	.testimonial-box-2 {
 		position: absolute;
-		bottom: -55px;
+		bottom: -75px;
 		left: 30%;
 		clear: both;
 		z-index: 100;
@@ -348,6 +356,7 @@ h1 {
 		padding: 30px 15px 0 15px;
 		/*border: 1px solid #484848;*/
 		box-shadow: 0px 0px 10px #989898;
+		background-color: #f0f0f0;
 	}
 
 	/* -- get rid of Sydney button style for comment submit btn  --*/
@@ -671,6 +680,29 @@ input[type="submit"].custom-btn:hover {
 	}
 
 
+
+
+
+
+/* -- woocommerce product/shop pages --*/
+
+.ang-custom-woo-container{
+	margin-top: 20px;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #aef11f!important;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #935386;
+    color: #000;
+}
+
+
+
 /* -- cart page --*/
 
 .cart-spacer {
@@ -735,8 +767,11 @@ input[value="Update Cart"].button {
 
 /* ------- Checkout Page ----- */
 
-#place_order {
-
+.showcoupon {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
 }
 
 input[type="submit"]#place_order {
@@ -770,3 +805,29 @@ input[type="submit"]#place_order {
 	background-color: ;
 	color: #000;
 }
+
+
+
+	/* ------ My Account Page ------ */
+
+	.woocommerce-MyAccount-navigation-link a {
+		color: black;
+	    font-size: 16px;
+	    font-weight: 600;
+	    font-style: italic;
+	}
+
+	.woocommerce-MyAccount-navigation-link a:hover {
+		color: red;
+	}
+
+	.woocommerce-MyAccount-content p a{
+		color: black;
+	    font-size: 16px;
+	    font-weight: 600;
+	    font-style: italic;
+	}
+
+	.woocommerce-MyAccount-content p a:hover {
+		color: red;
+	}
