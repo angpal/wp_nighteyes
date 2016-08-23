@@ -34,35 +34,34 @@ if ( $order ) : ?>
 		</p>
 
 	<?php else : ?>
+<div style="text-align: center">
+		<h1 class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you.<br>Your order has been received.', 'woocommerce' ), $order ); ?></h1>
 
-		<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+		<h3><?php _e( 'Order Number:', 'woocommerce' ); ?>
+				<strong><?php echo $order->get_order_number(); ?></strong></h3>
 
-		<ul class="woocommerce-thankyou-order-details order_details">
-			<li class="order">
-				<?php _e( 'Order Number:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_order_number(); ?></strong>
-			</li>
-			<li class="date">
-				<?php _e( 'Date:', 'woocommerce' ); ?>
-				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
-			</li>
-			<li class="total">
-				<?php _e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_formatted_order_total(); ?></strong>
-			</li>
-			<?php if ( $order->payment_method_title ) : ?>
-			<li class="method">
-				<?php _e( 'Payment Method:', 'woocommerce' ); ?>
-				<strong><?php echo $order->payment_method_title; ?></strong>
-			</li>
-			<?php endif; ?>
-		</ul>
+		<h3><?php _e( 'Date:', 'woocommerce' ); ?>
+				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong></h3>
+
+		<h3><?php _e( 'Total:', 'woocommerce' ); ?>
+				<strong><?php echo $order->get_formatted_order_total(); ?></strong></h3>
+
+		<h3><?php _e( 'Payment Method:', 'woocommerce' ); ?>
+				<strong><?php echo $order->payment_method_title; ?></strong></h3>
+</div>
+		
+
+<a class="custom-btn" href="http://localhost:8080/wp_nighteyes">
+			Return To Home Page		</a>
+
+
+
 		<div class="clear"></div>
 
 	<?php endif; ?>
 
-	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
-	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
+	<?php //do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
+	<?php //do_action( 'woocommerce_thankyou', $order->id ); ?>
 
 <?php else : ?>
 

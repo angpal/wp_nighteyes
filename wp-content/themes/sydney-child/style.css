@@ -808,6 +808,7 @@ input[type="submit"]#place_order {
 
 
 
+
 	/* ------ My Account Page ------ */
 
 	.woocommerce-MyAccount-navigation-link a {
@@ -831,3 +832,25 @@ input[type="submit"]#place_order {
 	.woocommerce-MyAccount-content p a:hover {
 		color: red;
 	}
+
+
+
+
+
+/* ------- Order Received page ------- 
+
+
+.woocommerce-thankyou-order-received {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.woocommerce-thankyou-order-details.order_details {
+    font-size: 18px;
+    margin: 50px 5px;
+}
+.woocommerce-thankyou-order-details.order_details strong {
+    margin-top: 5px;
+}
+
+*/
