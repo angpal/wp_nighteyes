@@ -140,9 +140,10 @@ h1 {
 	}
 	
 	.site-header {
-		background-color: #000;
+		background-color: #000!important;
 		padding: 20px 0;
 	}
+	
 	
 /* -------sub page header ----------*/
 
@@ -762,6 +763,46 @@ input[value="Update Cart"].button {
  	width: 40%;
  	color: #000!important;
 
+}
+
+
+/* ------- Cart Empty page ------ */
+
+.my-cart-empty {
+	min-height: 400px;
+}
+
+p.my-cart-empty  {
+	font-size: 25px!important;
+	margin-top: 20px;
+}
+
+.woocommerce {
+	min-height: 600px;
+}
+
+.return-to-shop a.wc-backward {
+	position: relative;
+    display: inline-block;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #aef11f!important;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all none;
+    -moz-transition: all none;
+    -ms-transition: all none;
+    -o-transition: all none;
+    transition: all none;
+    border: 1px solid #000;
+	}
 }
 
 

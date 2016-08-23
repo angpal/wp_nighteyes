@@ -24,7 +24,7 @@ wc_print_notices();
 
 ?>
 
-<p class="cart-empty">
+<p class="cart-empty my-cart-empty">
 	<?php _e( 'Your cart is currently empty.', 'woocommerce' ) ?>
 </p>
 
