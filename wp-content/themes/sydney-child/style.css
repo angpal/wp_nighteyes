@@ -931,7 +931,7 @@ input[type="submit"]#place_order {
 	.site-description {
 	    font-size: 16px;
 	    margin: 15px 0 0;
-	    line-height: 0.6;
+	    line-height: 1;
 	}
 
 	
@@ -1005,7 +1005,38 @@ input[type="submit"]#place_order {
 	    margin-bottom: 100px;
 	}
 
+	.contact_intro {
+	    width: 70%;
+	    display: inline-block;
+	}
+
+	.contact_icon {
+	    width: 30%;
+	    display: inline-block;
+	}
+
+
 }
+
+@media only screen and (max-width: 991px) {
+
+	.site-header.fixed {
+	    position: fixed!important;
+	}
+
+	.contact-form-left {
+	    width: 60%;
+	}
+	.contact-details-right {
+	    width: 40%;
+	}
+
+	.contact-details-right h3{
+		font-size: 28px;
+	}
+
+}
+
 
 
 
@@ -1023,9 +1054,11 @@ input[type="submit"]#place_order {
 
 
 }
-@media only screen and (max-width: 908px) {
 
-	
+
+
+
+@media only screen and (max-width: 908px) {
 
 	div.btn-menu{
 		color: #aef11f;
@@ -1033,6 +1066,8 @@ input[type="submit"]#place_order {
 		position: relative;
 		margin: 1px auto 20px;!important;
 	}
+
+}
 
 
 
@@ -1048,11 +1083,106 @@ input[type="submit"]#place_order {
 	    margin-top: 2px!important;
 	}
 
+	.sub-page-header {
+	    min-height: 255px;
+	}
+	.step {
+		font-size: 15px;
+	}
+		.contact-form-left {
+	    width: 100%;
+	    display: inline-block;
+	    float: left;
+	    margin: 20px auto 20px auto;
+	}
+	.contact-details-right {
+	    width: 100%;
+	    display: inline-block;
+	    float: left;
+	    clear: all;
+	    text-align: center;
+	    margin: 20px auto 20px auto;
+	}
+
+	.contact-details-right h3{
+		font-size: 22px;
+	}
+
+	.name_input {
+	    width: 100%;
+	    height: 62px;
+	    padding-left: 17px;
+	}
+
+
+	.email_input {
+	    width: 100%;
+	    height: 62px;
+	    padding-left: 17px;
+	}
+
+	.subject_input {
+	    width: 100%;
+	    height: 39px;
+	    padding-left: 17px;
+	    text-align: left;
+	}
+
+	span.your-name input[type="text"] {
+	    width: 95%;
+	}
+
+	span.your-email input[type="email"] {
+	    width: 95%;
+	}
+
+	span.your-subject input[type="text"] {
+	    width: 95%;
+	}
+
+
+
 }
 
 
 
 
+@media only screen and (max-width: 468px) {
+	.sub-page-header h1 {
+	    position: absolute;
+	    bottom: 0;
+	    left: 43px;
+	    margin-bottom: 5px;
+	    font-size: 40px;
+	}
+
+	.contact_intro {
+	    width: 100%;
+	    display: inline-block;
+	}
+
+	.contact_icon {
+	    width: 30%;
+	    display: none;
+	}
+
+
+
+	.cf-box {
+	    width: 100%;
+	    margin: auto;
+	    padding: 20px;
+	}
+
+	.contact-form-left p {
+	    font-size: 15px;
+	    margin-bottom: 0;
+	}
+
+
+
+
+}
 
 
 
