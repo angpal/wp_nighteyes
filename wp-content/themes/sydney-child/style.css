@@ -27,6 +27,11 @@ src: url(fonts/LoveloBlack.otf);
 
 	
 /* ----  GENERAL settings  ----- */
+*{box-sizing: border-box;}
+
+div#page{
+	overflow: hidden;
+}
 
 h1 {
 	font-family: lovelo; verdana;
@@ -877,21 +882,178 @@ input[type="submit"]#place_order {
 
 
 
+/* ----------------------------- */
 
-/* ------- Order Received page ------- 
+/* ------- MEDIA QUERIES ------- */
 
+/* ----------------------------- */
 
-.woocommerce-thankyou-order-received {
-    font-size: 2.5em;
-    font-weight: 600;
+@media only screen and (max-width: 1400px) {
+
+	.section-inner {
+	    margin: 0 70px;
+	    min-height: 100px;
+	    overflow: auto;
+	}
+
 }
 
-.woocommerce-thankyou-order-details.order_details {
-    font-size: 18px;
-    margin: 50px 5px;
-}
-.woocommerce-thankyou-order-details.order_details strong {
-    margin-top: 5px;
+@media only screen and (max-width: 1125px) {
+
+	.text-slider .maintitle {
+	    font-size: 45px!important;
+	    line-height: 55px;
+	    font-weight: 700;
+	    padding-bottom: 10px;
+	}
+
+
 }
 
-*/
+
+@media only screen and (max-width: 1024px) {
+
+
+	.btn-menu{
+		color: #aef11f;
+	}
+
+	.child-sydney-nav-logo {
+	    padding-left: 50px;
+	}
+
+
+	h1.site-title a{
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.site-description {
+	    font-size: 16px;
+	    margin: 15px 0 0;
+	    line-height: 0.6;
+	}
+
+	
+	.section-inner h1 {
+	    text-align: center;
+	    margin-top: 25px;
+	    margin-bottom: 45px;
+	    font-size: 40px;
+	}
+
+
+	.home_sect2_img {
+	    margin: 0 35px 16px 0;
+	    width: 329px;
+	    float: left;
+	}
+
+	.left-inner h2 {
+	    text-align: center;
+	    font-size: 32px;
+	}
+
+
+
+	.testimonial-box-1 {
+		box-sizing: border-box;
+	    position: absolute;
+	    top: -75px;
+	    left: 0;
+	    width: 100%;
+	    height: 150px;
+	    margin: auto;
+	    padding: 15px 80px;
+	    font-size: 15px;
+	    font-weight: 600;
+	}
+
+
+	.even-right-inner h2 {
+	    text-align: center;
+	    font-size: 32px;
+	}
+
+	.even-right-inner h3 {
+	    text-align: center;
+	    font-size: 28px;
+	}
+
+
+	.testimonial-box-2 {
+		position: absolute;
+		bottom: -75px;
+		left: 0;
+		width: 100%;
+		height: 150px;
+		margin: auto;
+		padding: 15px 80px;;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.sales-pitch p {
+	    font-size: 30px;
+	}
+
+	.statement p {
+	    clear: both;
+	    font-family: verdana;
+	    font-size: 25px;
+	    font-style: italic;
+	    text-align: center;
+	    margin-bottom: 100px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 908px) {
+
+
+	.text-slider .maintitle {
+	    font-size: 45px!important;
+	    line-height: 55px;
+	    font-weight: 700;
+	    padding-bottom: 10px;
+	    margin: 0 70px;
+	}
+
+
+
+}
+@media only screen and (max-width: 908px) {
+
+	
+
+	div.btn-menu{
+		color: #aef11f;
+		display: inline-block;
+		position: relative;
+		margin: 1px auto 20px;!important;
+	}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+	.site-description {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+		
+	.site-description  {
+	    margin-top: 2px!important;
+	}
+
+}
+
+
+
+
+
+
+
+
