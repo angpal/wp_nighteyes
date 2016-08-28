@@ -280,7 +280,7 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
     /* Code for the admin area */
 
     public function plugin_page_links($links) {
-        $customAdjustments_link = '<a href="http://form2email.dwbooster.com/contact-us">'.__('Request custom changes','contact-form-to-email').'</a>';
+        $customAdjustments_link = '<a href="http://form2email.dwbooster.com/customization">'.__('Request custom changes','contact-form-to-email').'</a>';
     	array_unshift($links, $customAdjustments_link);
         $settings_link = '<a href="admin.php?page='.$this->menu_parameter.'">'.__('Settings','contact-form-to-email').'</a>';
     	array_unshift($links, $settings_link);

@@ -154,7 +154,7 @@ The following translations are already included in the plugin:
 
 = Contact Form to Email Updates =
 
-New features has been published in the current Contact Form to Email version 1.2.7 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 180,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
+New features has been published in the current Contact Form to Email version 1.2.7 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 500,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
 
 = New: Form Builder =
 
@@ -607,9 +607,12 @@ When you click a field already added into the contact form builder area, you can
 = 1.1.50 =
 * Fixed XSS issue. Thank you to Netsparker Ltd (netsparker.com) for the notification.
 
+= 1.1.51 =
+* New customization form
+
 == Upgrade Notice ==
 
-= 1.1.50 =
-* Fixed XSS issue 
+= 1.1.51 =
+* New customization form
 
 Important note: If you are using a commercial version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://form2email.dwbooster.com/contact-us

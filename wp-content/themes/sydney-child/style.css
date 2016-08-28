@@ -311,10 +311,10 @@ h1 {
 	.testimonial-box-1 {
 		position: absolute;
 		top: -75px;
-		left: 30%;
+		left: 20%;
 		clear: all;
 		z-index: 1500;
-		width: 40%;
+		width: 60%;
 		height: 150px;
 		margin: auto;
 		padding: 15px;
@@ -329,10 +329,10 @@ h1 {
 	.testimonial-box-2 {
 		position: absolute;
 		bottom: -75px;
-		left: 30%;
+		left: 20%;
 		clear: both;
 		z-index: 100;
-		width: 40%;
+		width: 60%;
 		height: 150px;
 		margin: auto;
 		padding: 15px;
@@ -349,7 +349,8 @@ h1 {
 	.comment-left-inner {
 		width: 57%;
 		margin-right: 3%;
-		padding-top: 35px;
+		margin-top: 18px;
+		/*padding-top: 35px;*/
 		float:left;
 		margin-bottom: 15px;
 	}
@@ -357,9 +358,10 @@ h1 {
 	.comment-right-inner {
 		width: 37%;
 		float: left;
+		margin-top: 15px;
 		margin-left: 1%;
 		margin-bottom: 20px;
-		padding: 30px 15px 0 15px;
+		padding: 15px 15px 0 15px;
 		/*border: 1px solid #484848;*/
 		box-shadow: 0px 0px 10px #989898;
 		background-color: #f0f0f0;
@@ -450,6 +452,59 @@ input[type="submit"].custom-btn:hover {
 
 
 
+
+
+
+	/* ----- Footer ----- */
+
+	#sidebar-footer{
+		text-align: center;
+	}
+
+	.footer-widgets {
+    	padding: 35px 0!important;
+    }
+
+    .my-footer{
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.widget-area .widget{
+		margin-bottom: 0!important;
+		font-size: 18px;
+		/*text-align: center;*/
+	}
+
+
+	.go-top {
+	    
+	    color: #000!important;
+	}
+
+	.go-top:hover {
+	    
+	    color: #000!important;
+	}
+
+
+
+	
+	ul#menu-sitemap-menu {
+		display: inline-block;
+		text-align: left;
+	}
+
+	#sydney_contact_info-2{
+		display: inline-block;
+		text-align: left;
+	}
+
+
+
+
+/* -----------------OTHER PAGES ------------- */
+
 	/* ------- Contact Us Page ------ */
 
 	.contact_intro {
@@ -538,14 +593,14 @@ input[type="submit"].custom-btn:hover {
 	}
 
 	.cf-box {
-		width: 95%;
+		width: 100%;
 		margin: auto;
-		padding: 35px;
+		padding: 15px;
 		background-color: #f3f3f3;
 		box-shadow: 0px 0px 10px #989898 ;
 	}
 	.name_input {
-		width: 28%;
+		width: 30%;
 	}
 
 	.requ_stat {
@@ -555,15 +610,11 @@ input[type="submit"].custom-btn:hover {
 		padding-left: 5%;
 	}
 	input:focus {
-		/*border-color: transparent!important;
-		box-shadow: 1px 1px 2px inset!important;*/
 		box-shadow: none;
 		border: 1px solid #dbdbdb!important;
 	}
 
 	textarea:focus {
-		/*border-color: transparent!important;
-		box-shadow: 1px 1px 2px inset!important;*/
 		box-shadow: none!important;
 		border: 1px solid #dbdbdb!important;
 	}
@@ -572,35 +623,34 @@ input[type="submit"].custom-btn:hover {
 		position: relative;
 		top: -12px;
 		left: 15px;
-		width: 69%;
+		width: 67%;
 		background-color: #fff;
 	}
 
 
 	.email_input{
-		width: 28%;
+		width: 30%;
 	}
 
 	span.your-email input[type="email"]{
 		position: relative;
 		top: -12px;
 		left: 15px;
-		width: 69%;
+		width: 67%;
 		background-color: #fff;
 	}
 
 
 	.subject_input{
-		width: 28%;
+		width: 30%;
 		text-align: right;
-		padding-right: 5%;
 	}
 
 	span.your-subject input[type="text"]{
 		position: relative;
 		top: -12px;
 		left: 15px;
-		width: 69%;
+		width: 67%;
 		background-color:  #fff;
 	}
 
@@ -615,54 +665,12 @@ input[type="submit"].custom-btn:hover {
 		box-shadow: 5px 5px 5px rgba(192, 192, 192, 0.84) inset;
 	}
 
+	label.name_input {
+    margin-bottom: 0!important;
 
+}
 
-	/* ----- Footer ----- */
-
-	.footer-widgets {
-    	padding: 35px 0!important;
-    }
-
-    .my-footer{
-		font-size: 16px;
-		text-align: center;
-	}
-
-	.widget-area .widget{
-		margin-bottom: 0!important;
-		font-size: 18px;
-		/*text-align: center;*/
-	}
-
-
-	.go-top {
-	    
-	    color: #000!important;
-	}
-
-	.go-top:hover {
-	    
-	    color: #000!important;
-	}
-
-
-
-	#sidebar-footer{
-		text-align: center;
-	}
-
-	ul#menu-sitemap-menu {
-		display: inline-block;
-		text-align: left;
-	}
-
-	#sydney_contact_info-2{
-		display: inline-block;
-		text-align: left;
-	}
-
-
-
+	
 /* -- instructions page --*/
 
 	#instr-section1{
@@ -678,15 +686,16 @@ input[type="submit"].custom-btn:hover {
 		display: inline-block;
 		width: 62%;
 		padding: 0 8% 0 12%;
+		vertical-align: middle;
+
 	}
 
-	.instructions-right-inner{
+	.instructions-right-inner {
+		position: relative;
 		display: inline-block;
 		width: 30%;
+		vertical-align: middle;
 	}
-
-
-
 
 
 
@@ -988,10 +997,15 @@ input[type="submit"]#place_order {
 		width: 100%;
 		height: 150px;
 		margin: auto;
-		padding: 15px 80px;;
+		padding: 15px 80px;
 		font-size: 15px;
 		font-weight: 600;
 	}
+
+	#section4 h1 {
+		margin-bottom: 5px;
+	}
+
 	.sales-pitch p {
 	    font-size: 30px;
 	}
@@ -1035,6 +1049,40 @@ input[type="submit"]#place_order {
 		font-size: 28px;
 	}
 
+
+	.sidebar-column {
+		text-align: center;
+	}
+
+
+	#text-3.textwidget {
+		width:90%!important;
+	}
+
+	#nav_menu-2 {
+		padding: 50px 0 45px 0;
+		width: 40%!important;
+		float: left;
+	}
+	
+	#sydney_contact_info-2 {
+		padding: 50px 0 45px 0;
+		width: 40%!important;s
+		float: right;
+		display: inline-block;
+		text-align: center;
+	}
+
+
+	.comment-left-inner {
+    	width: 38%;
+    }
+
+    .comment-right-inner {
+    	width: 55%;
+    }
+
+
 }
 
 
@@ -1050,24 +1098,17 @@ input[type="submit"]#place_order {
 	    padding-bottom: 10px;
 	    margin: 0 70px;
 	}
-
-
-
-}
-
-
-
-
-@media only screen and (max-width: 908px) {
-
 	div.btn-menu{
-		color: #aef11f;
-		display: inline-block;
-		position: relative;
-		margin: 1px auto 20px;!important;
-	}
+			color: #aef11f;
+			display: inline-block;
+			position: relative;
+			margin: 1px auto 20px;!important;
+		}
+
 
 }
+
+
 
 
 
@@ -1089,7 +1130,8 @@ input[type="submit"]#place_order {
 	.step {
 		font-size: 15px;
 	}
-		.contact-form-left {
+
+	.contact-form-left {
 	    width: 100%;
 	    display: inline-block;
 	    float: left;
@@ -1140,7 +1182,139 @@ input[type="submit"]#place_order {
 	    width: 95%;
 	}
 
+}
 
+
+
+
+@media only screen and (max-width: 720px) {
+	.contact_intro {
+	    width: 100%;
+	    display: inline-block;
+	}
+
+	.contact_icon {
+	    width: 30%;
+	    display: none;
+	}
+	.instructions-left-inner{
+		
+		display: block;
+		width: 100%;
+		padding: 0 ;
+		vertical-align: middle;
+
+	}
+
+	.instructions-right-inner {
+		
+		display: block;
+		width: 80%;
+		vertical-align: middle;
+	}
+
+	.testimonial-box-1 {
+		font-size: 12px;
+
+	}
+
+	.testimonial-box-2 {
+		font-size: 12px;
+		padding: 10px 50px 10px 75px;
+	}
+
+
+	#section1 h1 {
+		font-size: 35px;
+	}
+	#section1 h2 {
+		font-size: 30px;
+	}
+
+	#section1 h3 {
+		font-size: 22px;
+	}
+
+
+
+	#section2 h1 {
+		font-size: 35px;
+	}
+	#section2 h2 {
+		font-size: 30px;
+	}
+
+	#section2 h3 {
+		font-size: 22px;
+	}
+
+	
+
+
+	#section3 h1 {
+		font-size: 35px;
+	}
+	#section3 h2 {
+		font-size: 30px;
+	}
+
+	#section3 h3 {
+		font-size: 22px;
+	}
+
+
+
+	#section4 h1 {
+		font-size: 35px;
+	}
+
+	#section4 h3 {
+		font-size: 22
+		px;
+	}
+
+
+	.comment-left-inner {
+		width: 100%;
+	}
+
+	.comment-right-inner {
+		width: 100%;
+	}
+
+
+
+
+}
+
+@media only screen and (max-width: 496px) {
+
+	.testimonial-box-1 {
+		box-sizing: border-box;
+	    position: absolute;
+	    top: -100px;
+	    left: 0;
+	    width: 100%;
+	    height: 200px;
+	    margin: auto;
+	    padding: 10px 50px 10px 75px;
+	    font-size: 12px;
+	    font-weight: 600;
+	}
+
+
+
+	.testimonial-box-2 {
+		position: absolute;
+		bottom: -100px;
+		left: 0;
+		width: 100%;
+		height: 200px;
+		margin: auto;
+		padding: 10px 50px 10px 75px;
+		font-size: 12px;
+		font-weight: 600;
+	}
 
 }
 
@@ -1154,16 +1328,6 @@ input[type="submit"]#place_order {
 	    left: 43px;
 	    margin-bottom: 5px;
 	    font-size: 40px;
-	}
-
-	.contact_intro {
-	    width: 100%;
-	    display: inline-block;
-	}
-
-	.contact_icon {
-	    width: 30%;
-	    display: none;
 	}
 
 
@@ -1180,7 +1344,53 @@ input[type="submit"]#place_order {
 	}
 
 
+	#section1 h1 {
+		font-size: 28px;
+	}
+	#section1 h2 {
+		font-size: 22px;
+	}
 
+	#section1 h3 {
+		font-size: 18px;
+	}
+
+
+
+	#section2 h1 {
+		font-size: 28px;
+	}
+	#section2 h2 {
+		font-size: 22px;
+	}
+
+	#section2 h3 {
+		font-size: 18px;
+	}
+
+	
+
+
+	#section3 h1 {
+		font-size: 28px;
+	}
+	#section3 h2 {
+		font-size: 22px;
+	}
+
+	#section3 h3 {
+		font-size: 18px;
+	}
+
+
+
+	#section4 h1 {
+		font-size: 28px;
+	}
+
+	#section4 h3 {
+		font-size: 18px;
+	}
 
 }
 
