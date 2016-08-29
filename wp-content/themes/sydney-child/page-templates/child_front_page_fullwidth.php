@@ -27,7 +27,7 @@ Template Name: Custom Home Page
 
 		<div id="section1" class="odd">
 			<div class="section-inner">
-
+<a name="learn-more"></a>
 				<h1><?php   echo $homepage[section1_title][0];  ?></h1>
 				
 				<img src="<?php   echo $homepage[section1_image][0];  ?>" class="home_sect2_img" alt="Night Eyes tab glowing in the dark">

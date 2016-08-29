@@ -136,7 +136,7 @@ function child_sydney_slider_button() {
 
     if ($slider_button) {
 	//first button needs to be hard coded here
-        echo '<a href="#" class="angelo roll-button-alt button-slider">LEARN MORE</a>';
+        echo '<a href="#learn-more" class="angelo roll-button-alt button-slider">LEARN MORE</a>';
 	// second button can be changed in customize theme options
 		echo '<a href="' . esc_url($slider_button_url) . '" class="roll-button button-slider">' . esc_html($slider_button) . '</a>';
     }
