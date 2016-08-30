@@ -101,7 +101,7 @@ Template Name: Custom Home Page
 
 					<h3><?php   echo $homepage[section3_title3][0];  ?></h3>
 
-					<a href="#" class="custom-btn">LEARN HOW</a>
+					<a href="<?php echo get_home_url() . "/instructions/"?>" class="custom-btn">LEARN HOW</a>
 
 				</div>
 			

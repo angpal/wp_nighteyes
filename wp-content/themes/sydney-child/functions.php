@@ -34,11 +34,10 @@ function angelo_wpb_move_comment_field_to_bottom( $fields ) {
 function child_sydney_add_custom_js(){
 
 //only adds js file if page is 'cart' page
-//if (is_page('cart')) {  <----- use this if statement to target specific page only
-	
+if (is_page('cart')) { 
 	wp_enqueue_script( 'custom-cart-fix', get_stylesheet_directory_uri() . '/js/ap_custom_javascript.js', array('jquery'),'', true );
 	
-//}
+}
 
 
 
@@ -46,7 +45,7 @@ function child_sydney_add_custom_js(){
 
 }
 
-add_action( 'wp_enqueue_scripts', 'child_sydney_add_custom_js' );
+add_action( 'wp_enqueue_scripts', 'child_sydney_add_custom_js', 50, 0 );
 
 
 //declare woocommerce support
@@ -107,6 +106,17 @@ function custom_after_cart() {
     });
 });
     </script>";
+}
+
+add_action('woocommerce_after_checkout_form', 'ap_change_btn_css');
+
+function ap_change_btn_css(){ ?>
+
+<script>
+setTimeout(function(){ jQuery('input[type="submit"].button, a.button').removeClass('button').addClass('custom-btn'); }, 2000);
+  </script>
+
+	<?php
 }
 
 
